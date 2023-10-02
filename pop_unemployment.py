@@ -17,11 +17,11 @@ fig, ax1 = plt.subplots(1, 1, figsize=(8, 6))
 df_pop = df.dropna(subset=["pop"])
 x_pop = df_pop['year']
 y_pop = df_pop['pop']
-ax1.plot(x_pop, y_pop, marker='o', linestyle='-', label='Population (number in millions)')
-ax1.plot(x_unemployment, y_unemployment, marker='o', linestyle='-.', color='green', label='Unemployment Rate (number in millions)')
+ax1.plot(x_pop, y_pop, marker='o', linestyle='-', label='Population ')
+ax1.plot(x_unemployment, y_unemployment, marker='o', linestyle='-.', color='green', label='Unemployment Rate')
 ax1.set_xlabel('Year')
-ax1.set_ylabel('Value')
-ax1.set_title('Population and Unemployment Rate (number in millions) for {}'.format(country))
+ax1.set_ylabel('Value in millions')
+ax1.set_title('Population and Unemployment Rate  for {}'.format(country))
 ax1.legend()
 
 # Adjust subplot spacing
